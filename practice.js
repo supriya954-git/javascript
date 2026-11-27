@@ -1,4 +1,25 @@
-// Student grade and graduation evaluator
+// Build a Node.js command-line application that collects student exam scores, assigns letter grades, and checks graduation eligibility.
+// Requirements
+// 1. Functions:
+
+//  calculateAverage(scores) — uses a for loop to sum an array of exam scores and
+
+// returns the average.
+//  getLetterGrade(average) — uses if / else if / else statements to return "A"
+
+// (90-100), "B" (80-89), "C" (70-79), "D" (60-69), or "F" (below 60).
+// getHonorStatus(grade) - uses a switch statement on the letter grade to return
+// a standing label ("Summa Cum Laude" for "A", "Magna Cum Laude" for "B",
+// "Good Standing" for "C", "Academic Warning" for "D", or "Academic Probation"
+// by default).
+// runEvaluator() — manages CLI input/output and coordinates the helper
+// functions.
+
+
+// 2. Core Flow (for loop + if / else + switch):
+// • Ask for the student's name, attendance percentage, and number of subjects. Use a for loop to prompt for each subject's score (0-100) and store it in an array. • Use if / else to check eligibility: the student passes only if attendance is 75% or higher AND the letter grade is not "F".
+// • Print a final report showing the average, letter grade, honor standing, and pass/fail status.
+
 
 import readline from 'node:readline/promises';
 import { stdin, stdout } from 'node:process';
